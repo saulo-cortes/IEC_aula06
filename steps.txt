@@ -1,0 +1,11 @@
+docker build -t container-hello:latest
+
+docker tag container-hello:latest thurogamarques/container-hello:latest
+
+docker login
+
+docker logout
+
+docker push thurogamarques/container-hello:latest
+
+docker run thurogamarques/container-hello:latest
